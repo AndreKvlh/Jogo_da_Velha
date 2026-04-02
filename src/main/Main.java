@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//Comentário comentando
 		Scanner leitor = new Scanner(System.in);
 		Tabuleiro tabuleiro = new Tabuleiro();
 		Jogo jogo = new Jogo();
