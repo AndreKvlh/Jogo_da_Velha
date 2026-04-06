@@ -99,6 +99,25 @@ public class Jogo {
 			}
 		}
 		
+		/*if (!vitoria) {
+			for (int i = 0; i < 3; i++) {
+				for (int j = 0; j < 3; j++) {
+					if(quadradoMagico[i][j] != 0) {
+						velha = false;
+						return velha;
+					}
+				}
+			}
+			if (velha) {
+				System.out.println("Deu velha");
+				return velha;
+			}
+		}*/
+		return false;
+	}
+	
+	public boolean deuVelha(boolean vitoria) {
+		boolean velha = true;
 		if (!vitoria) {
 			for (int i = 0; i < 3; i++) {
 				for (int j = 0; j < 3; j++) {
@@ -113,7 +132,10 @@ public class Jogo {
 				return velha;
 			}
 		}
-		
 		return false;
+	}
+	
+	public int getOpcao(int linha, int coluna) {
+		return opcoesTabuleiro[linha][coluna];
 	}
 }

@@ -29,4 +29,15 @@ public class Tabuleiro {
 	public void preencherTabuleiro(int linha, int coluna, char peca) {
 		this.tabuleiro[linha][coluna] = peca;
 	}
+	
+	public char getConteudo(int linha, int coluna) {
+		if (this.tabuleiro[linha][coluna] == '\u0000') {
+			return ' ';
+		}
+		return this.tabuleiro[linha][coluna];
+	}
+	
+	public void setConteudo(char peca, int linha, int coluna) {
+		this.tabuleiro[linha][coluna] = peca;
+	}
 }
